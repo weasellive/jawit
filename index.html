@@ -1,197 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JAW IT - Consulting & Managed Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAW IT - Consulting & Managed Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-        header {
-            background-color: #003366;
-            color: #ffffff;
-            padding: 20px;
-            border-bottom: 5px solid #0059b3;
-        }
+    header {
+      position: relative;
+      background-color: #003366;
+      color: #ffffff;
+      padding: 40px 20px 20px;
+      border-bottom: 5px solid #0059b3;
+      text-align: center;
+    }
 
-        .header-content {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-        }
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
 
-        .logo img {
-            height: 80px;
-        }
+    .logo img {
+      height: 80px;
+    }
 
-        .header-text h1 {
-            margin: 0;
-            font-size: 1.8rem;
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0059b3;
+      padding: 10px 0;
+    }
 
-        .header-text p {
-            margin: 5px 0 0;
-        }
+    nav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0059b3;
-            padding: 10px 0;
-        }
+    nav a:hover {
+      background-color: #004080;
+    }
 
-        nav a {
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-        nav a:hover {
-            background-color: #004080;
-        }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #004080;
+    }
 
-        .hero {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    .hero p {
+      color: #004080;
+    }
 
-        .hero h1 {
-            font-size: 3rem;
-            margin: 0;
-            color: #004080;
-        }
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .hero p {
-            color: #004080;
-        }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .service {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      min-width: 250px;
+    }
 
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+    .service h3 {
+      color: #0059b3;
+    }
 
-        .service {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            min-width: 250px;
-        }
+    footer {
+      background-color: #003366;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
 
-        .service h3 {
-            color: #0059b3;
-        }
-
-        footer {
-            background-color: #003366;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        a {
-            color: #0059b3;
-        }
-    </style>
+    a {
+      color: #0059b3;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <a href="index.html" class="logo">
-                <img src="images/logo1.png" alt="JAW IT Logo">
-            </a>
-            <div class="header-text">
-                <h1>JAW IT - Just Add Water For Instant IT</h1>
-                <p>Consulting & Managed Services for Businesses</p>
-            </div>
-        </div>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/logo1.png" alt="JAW IT Logo">
+    </a>
+    <h1>JAW IT - Just Add Water For Instant IT</h1>
+    <p>Consulting & Managed Services for Businesses</p>
+  </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div>
-            <h1>Empowering Your Business with Technology</h1>
-            <p>Expert IT Consulting and Managed Services to Drive Success</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Empowering Your Business with Technology</h1>
+      <p>Expert IT Consulting and Managed Services to Drive Success</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>IT Consulting</h3>
+          <p>We provide expert consulting to help you optimize your IT infrastructure, streamline operations, and implement the best solutions for your business needs.</p>
         </div>
+        <div class="service">
+          <h3>Managed IT Services</h3>
+          <p>Let us handle your IT needs with proactive monitoring, support, and maintenance, ensuring your business operates smoothly.</p>
+        </div>
+        <div class="service">
+          <h3>Cloud Solutions</h3>
+          <p>Take advantage of the cloud with our tailored solutions for cloud migration, management, and security.</p>
+        </div>
+        <div class="service">
+          <h3>Network Security</h3>
+          <p>Protect your business with our comprehensive network security services, including firewall management, threat detection, and vulnerability assessments.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Main Content -->
-    <div class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About JAW IT</h2>
+      <p>At JAW IT, we specialize in delivering technology solutions that empower businesses. Our team of experts is dedicated to providing high-quality IT consulting and managed services to ensure that your business stays ahead in a constantly evolving digital landscape.</p>
+    </section>
 
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>IT Consulting</h3>
-                    <p>We provide expert consulting to help you optimize your IT infrastructure, streamline operations, and implement the best solutions for your business needs.</p>
-                </div>
-                <div class="service">
-                    <h3>Managed IT Services</h3>
-                    <p>Let us handle your IT needs with proactive monitoring, support, and maintenance, ensuring your business operates smoothly.</p>
-                </div>
-                <div class="service">
-                    <h3>Cloud Solutions</h3>
-                    <p>Take advantage of the cloud with our tailored solutions for cloud migration, management, and security.</p>
-                </div>
-                <div class="service">
-                    <h3>Network Security</h3>
-                    <p>Protect your business with our comprehensive network security services, including firewall management, threat detection, and vulnerability assessments.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Ready to take your IT to the next level? Get in touch with us today.</p>
+      <p>Email: <a href="mailto:jawitllc0001@gmail.com">jawitllc0001@gmail.com</a></p>
+      <p>Phone: (800) 917-3118</p>
+    </section>
+  </div>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About JAW IT</h2>
-            <p>At JAW IT, we specialize in delivering technology solutions that empower businesses. Our team of experts is dedicated to providing high-quality IT consulting and managed services to ensure that your business stays ahead in a constantly evolving digital landscape.</p>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Ready to take your IT to the next level? Get in touch with us today.</p>
-            <p>Email: <a href="mailto:jawitllc0001@gmail.com">jawitllc0001@gmail.com</a></p>
-            <p>Phone: (800) 917-3118</p>
-        </section>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 JAW IT. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 JAW IT. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
