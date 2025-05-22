@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-</header>
-
- <a href="index.html" style="position: absolute; top: 20px; left: 20px;">
-        <img src="images/logo1.png" alt="JAW IT Logo" style="height: 60px;">
-    </a>
-    <div style="margin-left: 80px;">
-    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JAW IT - Consulting & Managed Services</title>
     <style>
         body {
@@ -25,7 +17,26 @@
             background-color: #003366;
             color: #ffffff;
             padding: 20px 0;
-            text-align: center;
+            position: relative;
+            border-bottom: 5px solid #0059b3; /* header border */
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            height: 80px; /* Larger logo */
+        }
+
+        header h1, header p {
+            margin: 0;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
         }
 
         nav {
@@ -61,9 +72,11 @@
             margin: 0;
             color: #004080;
         }
+
         .hero p {
             color: #004080;
         }
+
         .container {
             padding: 20px;
             max-width: 1200px;
@@ -98,9 +111,12 @@
         }
     </style>
 </head>
-
 <body>
+
     <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo1.png" alt="JAW IT Logo">
+        </a>
         <h1>JAW IT - Just Add Water For Instant IT</h1>
         <p>Consulting & Managed Services for Businesses</p>
     </header>
@@ -161,8 +177,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 JAW IT. All rights reserved.</p>
+        <p>&copy; 2025 JAW IT. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
